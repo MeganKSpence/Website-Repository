@@ -7,6 +7,7 @@
 <style>
 .button {
     background-color: #ff0000;
+    border: black;
     color: white;
     padding: 15px 45px;
     text-align: cent50er;
