@@ -3,7 +3,7 @@
 ## To-Do List
 - [] Create the home page
   - [] add the background to the home page and the main logo
-  - [] add the 5 main buttons to the top of the home page
+  - [x] add the 5 main buttons to the top of the home page
 - [] create the menu page
   - [] create the food category buttons (will be able to open and close)
   - [] add the actual food you can buy including pictures, descriptions and price
@@ -22,3 +22,4 @@
   - [] Add the picture and ways to contact the manager
   - [] create the job application form - wish list
     - [] create the button to take you to the job application - wish list
+- [] Create index.js file for website repository
