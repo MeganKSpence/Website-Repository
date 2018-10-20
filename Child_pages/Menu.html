@@ -30,7 +30,6 @@
     background-color: #292E30;
   }
 
-  /* Button CSS */
   .wrapper {
     text-align: center;
   }
@@ -58,55 +57,58 @@
     border: 2px solid #2DCEAB;
   }
 
-  /* Image and header CSS */
-  .img-wrapper {
-    position: relative;
-    text-align: center;
+  .collapsible {
+    background-color: #777;
     color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
   }
-  .header {
-    position: absolute;
-    top: -18%;
-    left: 50%;
-    transform: translate(-50%, 50%);
+  .active, .collapsible:hover {
+    background-color: #555;
   }
-  h1 {
-    font-size: 60px;
-    color: #84CEBE;
-    padding: 10px;
-    background-color: #292E30;
-  }
-  .slogan {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-  }
-  h2 {
-    font-size: 20px;
-    color: #84CEBE;
-    padding: 5px;
-    background-color: #292E30;
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
   }
 
 </style>
 
   <br></br>
-<!-- Image and header -->
-  <div class="img-wrapper">
-    <div class="header">
-      <header><h1>Fries and Friends</h1></header>
-    </div>
-      <div>
-        <img src="https://blog.rockbot.com/hs-fs/hub/351146/file-601271402-jpg/blog-files/restaurant-music-happy-hour.jpg?t=1535494324597&width=618&height=412&name=restaurant-music-happy-hour.jpg" alt="The image is not avalible at this time" width=1510 height=610
+  <div>
+    <button class="collapsible">Starters</button>
+      <div class="content">
+        <p>Information and pictures go here</p>
       </div>
-        <div class="slogan">
-          <h2>Where friends and family come together to enjoy quality food</h2>
+    <button class="collapsible">Mains</button>
+      <div class="content">
+        <p>Information and pictures go here</p>
+      </div>
+    <button class="collapsible">Soups and Salads</button>
+      <div class="content">
+        <p>Information and pictures go here</p>
+      </div>
+    <button class="collapsible">Burgers and Sandwhichs</button>
+      <div class="content">
+        <p>Information and pictures go here</p>
+      </div>
+    <button class="collapsible">Kids</button>
+      <div class="content">
+        <p>Information and pictures go here</p>
+      </div>
+    <button class="collapsible">Drinks</button>
+      <div class="content">
+        <p>Information and pictures go here</p>
+      </div>
   </div>
-
-  <div><footer>&copy;Megan Spence, made possible by github</footer></div>
-  <script src="index.js"></script>
+  <script src="../Scripts/Menu.js"></scripts>
 
 </body>
-
 </html>
