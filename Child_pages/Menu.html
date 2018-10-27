@@ -17,19 +17,109 @@
   <br></br>
     <div class="wrapper">
       <a href="../FriesandFriends.html" class="button">Home</a>
-<<<<<<< HEAD
-      <a href="Child_pages/Menu.html" class="button">Menu</a>
-      <a href="Child_pages/Checkout.html" button class="button">Checkout</a>
-      <a href="Child_pages/News.html" button class="button">News</a>
-      <a href="Child_pages/ContactInfo.html" button class="button">Contact Info</a>
-=======
       <a href="Menu.html" class="button">Menu</a>
       <a href="Checkout.html" button class="button">Checkout</a>
       <a href="News.html" button class="button">News</a>
       <a href="ContactInfo.html" button class="button">Contact Info</a>
->>>>>>> f6ba7fc1d21c52de16f3196b33393e540a6ad6b8
     </div>
   <br></br>
+
+  <br></br>
+  <div>
+    <button class="collapsible">Starters</button>
+      <div class="content">
+        <div class="Img1">
+          <p><img src="../Images/Img2.jpg" alt="image is not avalible at this time" align="left">
+        </div>
+          <br></br>
+        <div align="relative">
+          <header>Nachos<header>
+          <p>A bed of zesty doritos layed with peperjack cheese, sour cream, home made salsa and seasoned ground beef. Serves 2 - 4 people.</p>
+          <p> Cost: $11</p>
+            <form>
+              <header> Quantity: </header>
+              <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value"></div>
+              <input type="number" id="number" value="0" />
+              <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value"></div>
+            </form>
+        </div>
+      </div>
+
+    <button class="collapsible">Mains</button>
+      <div class="content">
+        <img src="../Images/Img3.jpg" alt="image is not available at this time">
+        <header>Grilled Salmon</header>
+        <p>Mustard glazed salmon with your choice of mashed potatoes, salad, fries, or a soup.</p>
+          <form>
+            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+            <input type="number" id="number" value="0" />
+            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+          </form>
+      </div>
+
+    <button class="collapsible">Soups and Salads</button>
+      <div class="content">
+        <img src="../Images/Img4.jpg" alt="image is not available at this time">
+        <header>Chicken Ceaser Salad</header>
+        <p>A classic caeser salad topped with grilled chicken.</p>
+          <form>
+            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+            <input type="number" id="number" value="0" />
+            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+          </form>
+
+        <img src="../Images/Img5.jpg" alt="image is not available at this time">
+        <header>Bacon Clam Chowder</header>
+        <p>made with diced potatoes, celery, onions, carrots and of course the stars of the dish bacon and clams.</p>
+          <form>
+            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+            <input type="number" id="number" value="0" />
+            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+          </form>
+      </div>
+
+    <button class="collapsible">Burgers and Sandwichs</button>
+      <div class="content">
+        <img src="../Images/Img6.jpg" alt="image is not available at this time">
+        <header>Classing Cheese Burger</header>
+        <p>As simple as a burger can get. American cheese, tomatoes, lettuce, pickles, and a beef patty.</p>
+          <form>
+            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+            <input type="number" id="number" value="0" />
+            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+          </form>
+
+        <img src="../Images/Img7.jpg" alt="image is not available at this time">
+        <header>Double Cheese Burger</header>
+        <p>Take the classic burger now double the meat, cheese, and flavour!</p>
+          <form>
+            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+            <input type="number" id="number" value="0" />
+            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+          </form>
+
+        <img src="../Images/Img8.jpg" alt="image is not available at this time">
+        <header>Bacon Cheese Burger</header>
+        <p>A beef patty covered with mozerella, lettuce tomatoes, caramalized onions, and four slices of bacon.</p>
+          <form>
+            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+            <input type="number" id="number" value="0" />
+            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+          </form>
+      </div>
+
+    <button class="collapsible">Kids</button>
+      <div class="content">
+        <p>Information and pictures go here</p>
+      </div>
+
+    <button class="collapsible">Drinks</button>
+      <div class="content">
+        <p>Information and pictures go here</p>
+      </div>
+  </div>
+
+
 
 <style>
 
@@ -82,47 +172,26 @@
     padding: 0 18px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.5s ease-out;
     background-color: #f1f1f1;
   }
 
-</style>
+  button {
+    margin: 4px;
+    cursor: pointer;
+  }
+  input {
+    text-align: center;
+    width: 40px;
+    margin: 4px;
+    color: salmon;
+  }
 
-  <br></br>
-  <div>
-    <button class="collapsible">Starters</button>
-      <div class="content">
-        <div class="image">
-          <img src="../Images/Img2.jpg" alt="image is not avalible at this time">
-          <header>Nachos<header>
-          <p>A bed of zesty doritos layed with peperjack cheese, sour cream, home made salsa and seasoned ground beef</p>
-        </div>
-      </div>
-    <button class="collapsible">Mains</button>
-      <div class="content">
-        <img src="../Images/Img3.jpg" alt="image is not available at this time">
-        <header>Grilled Salmon</header>
-        <p>Mustard glazed salmon with your choice of mashed potatoes, salad, fries, or the soup of the day.</p>
-      </div>
-    <button class="collapsible">Soups and Salads</button>
-      <div class="content">
-        <img src="../Images/Img4.jpg" alt="image is not available at this time">
-        <header>Ceaser Salad</header>
-        <p>A classic caeser salad</p>
-      </div>
-    <button class="collapsible">Burgers and Sandwichs</button>
-      <div class="content">
-        <p>Information and pictures go here</p>
-      </div>
-    <button class="collapsible">Kids</button>
-      <div class="content">
-        <p>Information and pictures go here</p>
-      </div>
-    <button class="collapsible">Drinks</button>
-      <div class="content">
-        <p>Information and pictures go here</p>
-      </div>
-  </div>
+  .img1 {
+    border: solid 2px black;
+  }
+
+</style>
 
   <script src="../Scripts/Menu.js"></script>
 
