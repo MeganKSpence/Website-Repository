@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Fries and Friends/mainPage</title>
+  </head>
+  <body>
+    <a href="MainPage.html" class=button>Home Page</a>
+    <a href="MenuPage.html" class=button>Menu</a>
+    <a href="CheckoutPage.html" class=button>Checkout</a>
+    <a href="NewsInfo.html" class=button>News and Information</a>
+
+    <header><h1>Mains</h1><header>
+    <header><h2>Classic Burger - $15</h2></header>
+
+    <p>Your Current Cost: $<a id="classicBurger">0</a></p>
+    <button type="button" onClick="onClickAdd()">+</button>
+    <p>Quantity: <a id="clicks">0</a></p>
+    <button type="button" onclick="onClickSubtract()">-</button>
+
+
+    <script type="text/javascript">
+      var clicks = 0;
+      var classicBurger = 0;
+      function onClickAdd() {
+        clicks += 1;
+        classicBurger += 15;
+        document.getElementById("clicks").innerHTML = clicks;
+        document.getElementById("classicBurger").innerHTML = classicBurger;
+      }
+      function onClickSubtract() {
+        if (clicks != 0) {
+          clicks -= 1;
+          classicBurger -= 15;
+          document.getElementById("clicks").innerHTML = clicks;
+          document.getElementById("classicBurger").innerHTML = classicBurger;
+        }
+      }
+    </script>
+  </body>
+</html>
